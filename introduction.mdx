@@ -1,0 +1,129 @@
+---
+title: Introduction to yashwanth-test2
+description: Overview of yashwanth-test2, a default documentation space for organizing and managing project documentation with a focus on ease of use and customization.
+---
+
+## Overview
+
+yashwanth-test2 provides a centralized space for your project documentation. You create, organize, and manage all docs in one place with intuitive tools that support Markdown, MDX, and custom components. Focus on content while it handles hosting, search, and versioning.
+
+This default space comes pre-configured for quick setup, letting you customize themes, add integrations, and collaborate with your team seamlessly.
+
+## Key Features
+
+yashwanth-test2 stands out with powerful features designed for modern documentation needs.
+
+<Columns cols={3}>
+  <Card title="MDX Components" icon="code" href="#mdx-components">
+    Build rich pages using components like `<Callout>`, `<Steps>`, and `<Tabs>`.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="#version-control">
+    Track changes with Git integration and changelog management.
+  </Card>
+  <Card title="Search & Navigation" icon="search" href="#search">
+    Full-text search and sidebar navigation keep users oriented.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  Customize your docs with the brand color `#3B82F6` for buttons, links, and accents.
+</Callout>
+
+## Quick Start
+
+Get started in minutes. Follow these steps to set up your first documentation page.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://dashboard.example.com` with your email.
+  </Step>
+  <Step title="Initialize Space" icon="settings">
+    Create a new documentation space named `yashwanth-test2`.
+  </Step>
+  <Step title="Add Content" icon="edit-3">
+    Upload your first MDX file to `/introduction.mdx`.
+  </Step>
+  <Step title="Publish" icon="globe">
+    Deploy live at `https://docs.example.com`.
+  </Step>
+</Steps>
+
+## Styling Guidelines
+
+Match your brand using the primary color `#3B82F6`. Apply it consistently for a professional look.
+
+<CodeGroup tabs="CSS, Tailwind">
+  ```css
+  :root {
+    --brand-primary: #3B82F6;
+  }
+
+  .button {
+    background-color: var(--brand-primary);
+    color: white;
+  }
+  ```
+  ```jsx
+  // Tailwind config
+  module.exports = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#3B82F6',
+        },
+      },
+    },
+  };
+  ```
+</CodeGroup>
+
+## Platform Setup
+
+Install dependencies based on your environment.
+
+<Tabs>
+  <Tab title="Node.js" icon="nodejs">
+    ```bash
+    npm init -y
+    npm install mdx-components
+    ```
+  </Tab>
+  <Tab title="Python" icon="python">
+    ```bash
+    pip install mdx-components
+    ```
+  </Tab>
+</Tabs>
+
+## Next Steps
+
+Explore more documentation to build your site.
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="zap" href="/quickstart">
+    Set up your first project in under 5 minutes.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your docs with API keys and tokens.
+  </Card>
+  <Card title="Configuration" icon="settings" href="/configuration">
+    Customize themes and integrations.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Track updates and releases.
+  </Card>
+</Columns>
+
+<Expandable title="Advanced Customization" default-open="false">
+  Override default styles by editing `theme.config.js`:
+
+  ```javascript
+  export default {
+    colors: {
+      primary: '#3B82F6',
+    },
+  };
+  ```
+
+  Integrate with GitHub for automatic deployments.
+</Expandable>

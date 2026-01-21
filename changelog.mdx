@@ -1,0 +1,132 @@
+---
+title: Changelog
+description: Review the version history of yashwanth-test2, including recent updates, new features, and improvements.
+---
+
+## Release History
+
+Stay updated with the latest improvements to yashwanth-test2. You review changes here to understand new features, bug fixes, and breaking updates before upgrading your integration.
+
+<Columns cols={3}>
+  <Card title="Latest" icon="zap" href="#v1-2-0">
+    v1.2.0 highlights and upgrade instructions.
+  </Card>
+  <Card title="All Releases" icon="list" href="#previous-releases">
+    Full history of past versions.
+  </Card>
+  <Card title="Upgrade Guide" icon="arrow-up" href="#upgrading">
+    Step-by-step instructions to update.
+  </Card>
+</Columns>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added support for real-time webhooks at `https://api.example.com/v1/webhooks`
+- Introduced batch API requests to reduce latency by up to 70%
+
+## Improvements
+
+- Enhanced error handling with detailed `{errorCode}` and `{message}` fields
+- Optimized dashboard loading times on `https://dashboard.example.com`
+
+## Bug Fixes
+
+- Fixed authentication token refresh loop in long-running sessions
+- Resolved query parameter encoding issues for URLs with special characters
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- New analytics endpoint: `GET https://api.example.com/v1/analytics/summary`
+- Dashboard export to CSV directly from `https://dashboard.example.com/reports`
+
+## Bug Fixes
+
+- Corrected pagination offsets in list endpoints
+- Patched potential XSS in user-generated content previews
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## Breaking Changes
+
+- Updated default API version from `v0` to `v1` – update your base URL to `https://api.example.com/v1`
+
+## New Features
+
+- Core SDK installation: `npm install yashwanth-test2`
+- Initial authentication flow with `https://auth.example.com/oauth/token`
+- Basic CRUD operations for projects and users
+
+## Initial Setup
+
+- Dashboard access at `https://dashboard.example.com`
+
+</Update>
+
+## Upgrading
+
+Follow these steps to upgrade yashwanth-test2 safely.
+
+<Steps>
+  <Step title="Check Compatibility" icon="check-circle">
+
+    Review the changelog above for breaking changes matching your current version.
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+    Use your package manager to install the latest version.
+
+    <CodeGroup tabs="npm,yarn,pnpm">
+      ```bash
+      npm install yashwanth-test2@latest
+      ```
+      ```bash
+      yarn add yashwanth-test2@latest
+      ```
+      ```bash
+      pnpm add yashwanth-test2@latest
+      ```
+    </CodeGroup>
+
+  </Step>
+  <Step title="Test Integration" icon="play">
+
+    Run your tests, focusing on API calls to `https://api.example.com/v1`.
+
+    <Callout kind="tip">
+      Monitor your console for deprecation warnings during the first run.
+    </Callout>
+
+  </Step>
+  <Step title="Deploy" icon="rocket">
+
+    Deploy to production and verify webhooks at `https://your-webhook-url.com/webhook`.
+
+  </Step>
+</Steps>
+
+## Upcoming Changes
+
+<Expandable title="v1.3.0 Preview" default-open="false">
+
+You can expect:
+
+- GraphQL API support at `https://api.example.com/graphql`
+- AI-powered insights in the dashboard
+- Zero-downtime deployments
+
+Provide feedback via GitHub issues.
+
+</Expandable>
+
+<Callout kind="info">
+  Subscribe to our release notifications on the dashboard at `https://dashboard.example.com/notifications` to stay ahead.
+</Callout>
